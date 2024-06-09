@@ -13,7 +13,7 @@ def main():
     
     # Create ph input with 0 as the minimum and 14 as the max value
     ph = st.number_input('pH (0-14): ', min_value=0.0, max_value=14.0)
-    Hardness = st.number_input('Hardness: ')
+    Hardness = st.number_input('Hardness (mg/L): ')
     Solids = st.number_input('Solids: ')
     Chloramines = st.number_input('Chloramines: ')
     Sulfate = st.number_input('Sulfate: ')
