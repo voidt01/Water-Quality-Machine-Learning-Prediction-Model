@@ -13,14 +13,14 @@ def main():
     
     # Create ph input with 0 as the minimum and 14 as the max value
     ph = st.number_input('pH (0-14): ', min_value=0.0, max_value=14.0)
-    Hardness = st.number_input('Hardness (mg/L): ')
-    Solids = st.number_input('Solids (ppm): ')
-    Chloramines = st.number_input('Chloramines (ppm): ')
-    Sulfate = st.number_input('Sulfate (mg/L): ')
-    Conductivity = st.number_input('Conductivity (μS/cm): ')
-    Organic_carbon = st.number_input('Organic_carbon (ppm): ')
-    Trihalomethanes = st.number_input('Trihalomethanes (μg/L): ')
-    Turbidity = st.number_input('Turbidity (NTU): ')
+    Hardness = st.number_input('Hardness (mg/L): ', min_value=0.0)
+    Solids = st.number_input('Solids (ppm): ', min_value=0.0)
+    Chloramines = st.number_input('Chloramines (ppm): ', min_value=0.0)
+    Sulfate = st.number_input('Sulfate (mg/L): ', min_value=0.0)
+    Conductivity = st.number_input('Conductivity (μS/cm): ', min_value=0.0)
+    Organic_carbon = st.number_input('Organic_carbon (ppm): ', min_value=0.0)
+    Trihalomethanes = st.number_input('Trihalomethanes (μg/L): ', min_value=0.0)
+    Turbidity = st.number_input('Turbidity (NTU): ', min_value=0.0)
     
     if st.button('Check Water Quality'):
         # make prediction
